@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BrainBuster | Modern Quiz App</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+ <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1><i class="fas fa-brain"></i> BrainBuster</h1>
+            <p>Test your knowledge with our challenging quiz</p>
+        </div>
+        
+        <div class="quiz-container" id="quiz-container">
+            <div class="quiz-info">
+                <div class="info-item">
+                    <span class="info-label">QUESTION</span>
+                    <span class="info-value" id="current-question">1/20</span>
+                </div>
+                <div class="info-item">
+                    <span class="info-label">SCORE</span>
+                    <span class="info-value" id="score">0</span>
+                </div>
+                <div class="info-item">
+                    <span class="info-label">TIME</span>
+                    <span class="info-value" id="timer"></span>
+                </div>
+            </div>
+            
+            <div class="progress-container">
+                <div class="progress-bar">
+                    <div class="progress" id="progress"></div>
+                </div>
+            </div>
+            
+            <div class="question-container">
+                <div class="question-number " >Question <span id="question-number">1</span> of 20</div>
+                <h2 class="question-text" id="question-text">What is the capital of France?</h2>
+                
+                <div class="options-container" id="options-container">
+                 
+                </div>
+            </div>
+            
+            <div class="controls">
+                <button class="btn btn-secondary" id="prev-btn" disabled>
+                    <i class="fas fa-arrow-left"></i> Previous
+                </button>
+                <button class="btn btn-primary" id="next-btn">
+                    Next <i class="fas fa-arrow-right"></i>
+                </button>
+            </div>
+        </div>
+        
+        <div class="results-container" id="results-container">
+            <div class="results-icon">
+                <i class="fas fa-trophy"></i>
+            </div>
+            <h2 class="results-title">Quiz Completed!</h2>
+            <div class="results-score" id="final-score">0%</div>
+            <p class="results-message" id="results-message">You're a quiz master! Impressive knowledge.</p>
+            
+            <div class="stats">
+                <div class="stat">
+                    <div class="stat-value" id="correct-answers">0</div>
+                    <div class="stat-label">Correct Answers</div>
+                </div>
+                <div class="stat">
+                    <div class="stat-value" id="wrong-answers">0</div>
+                    <div class="stat-label">Wrong Answers</div>
+                </div>
+                <div class="stat">
+                    <div class="stat-value" id="time-taken">0s</div>
+                    <div class="stat-label">Time Taken</div>
+                </div>
+            </div>
+            
+            <button class="btn btn-primary" id="restart-btn">
+                <i class="fas fa-redo"></i> Try Again
+            </button>
+        </div>
+    </div>
+    
+    <div class="celebrate" id="celebrate">
+     
+    </div>
+  <script type="module" src="./script.js"></script>
+</body>
+</html>

@@ -1,0 +1,120 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+  }
+ 
+ 
+  body {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
+    color: #fff;
+  }
+ 
+  /* ====== Card Container ====== */
+  .container {
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(15px);
+    border-radius: 20px;
+    padding: 40px;
+    width: 90%;
+    max-width: 450px;
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    transition: transform 0.3s ease;
+  }
+ 
+  .container:hover {
+    transform: translateY(-5px);
+  }
+ 
+  /* ====== Heading ====== */
+  h1 {
+   text-align: center;
+    font-size: 1.6rem;
+    font-weight: 700;
+    margin-bottom: 20px;
+    letter-spacing: 1px;
+    color: #f3f3f3;
+  }
+ 
+ 
+  .input-group {
+    margin-bottom: 15px;
+    text-align: left;
+  }
+ 
+  label {
+    font-size: 0.9rem;
+    display: block;
+    margin-bottom: 6px;
+    color: #dcdcdc;
+  }
+ 
+  input {
+    width: 100%;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 8px;
+    font-size: 1rem;
+    outline: none;
+    color: #333;
+    background: rgba(255, 255, 255, 0.9);
+    transition: box-shadow 0.3s ease;
+  }
+ 
+  input:focus {
+    box-shadow: 0 0 8px rgba(255, 255, 255, 0.5);
+  }
+ 
+  
+  button {
+    background: #00c6ff;
+    background: linear-gradient(45deg, #00c6ff, #0072ff);
+    border: none;
+    padding: 12px 25px;
+    border-radius: 25px;
+    font-size: 1rem;
+    color: #fff;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    margin-top: 10px;
+    width: 100%;
+  }
+ 
+  button:hover {
+    background: linear-gradient(45deg, #0072ff, #00c6ff);
+    box-shadow: 0 0 15px rgba(0, 198, 255, 0.5);
+    transform: translateY(-2px);
+  }
+ 
+ 
+  .result {
+    margin-top: 25px;
+    font-size: 1.3rem;
+    font-weight: 600;
+    color: #00e0ff;
+    opacity: 0;
+    transition: opacity 0.5s ease;
+  }
+ 
+  .show {
+    opacity: 1;
+  }
+ 
+ 
+  @media (max-width: 480px) {
+    h1 {
+      font-size: 1.2rem;
+      text-align: left;
+    }
+    .container {
+      padding: 30px 20px;
+    }
+  }

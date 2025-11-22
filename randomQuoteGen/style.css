@@ -1,0 +1,80 @@
+  
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: "Poppins", sans-serif;
+      }
+  
+      body {
+        height: 100vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background: linear-gradient(135deg, #6a11cb 0%, #2575fc 100%);
+        color: #fff;
+      }
+  
+      
+      .quote-box {
+        background: rgba(255, 255, 255, 0.1);
+        -webkit-backdrop-filter: blur(10px);
+        backdrop-filter: blur(10px);
+        border-radius: 20px;
+        padding: 40px;
+        width: 90%;
+        max-width: 500px;
+        text-align: center;
+        box-shadow: 0 8px 30px rgba(0, 0, 0, 0.2);
+        transition: transform 0.3s ease;
+      }
+  
+      .quote-box:hover {
+        transform: translateY(-5px);
+      }
+  
+      
+      .quote {
+        font-size: 1.5rem;
+        font-weight: 500;
+        line-height: 1.6;
+        margin-bottom: 20px;
+      }
+  
+    
+      .author {
+        font-size: 1rem;
+        font-style: italic;
+        opacity: 0.85;
+        margin-bottom: 30px;
+      }
+  
+      .new-quote-btn {
+        background: #fff;
+        color: #2575fc;
+        border: none;
+        padding: 12px 25px;
+        border-radius: 25px;
+        font-size: 1rem;
+        cursor: pointer;
+        font-weight: 600;
+        transition: all 0.3s ease;
+      }
+  
+      .new-quote-btn:hover {
+        background: #2575fc;
+        color: #fff;
+        box-shadow: 0 0 15px rgba(255, 255, 255, 0.4);
+      }
+  
+     
+      @media (max-width: 480px) {
+        .quote {
+          font-size: 1.2rem;
+        }
+  
+        .new-quote-btn {
+          padding: 10px 20px;
+          font-size: 0.9rem;
+        }
+      }
